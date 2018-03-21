@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Runs a bootnode with ethereum official "alltools" image.
 #
 docker stop ethereum-bootnode
 docker rm ethereum-bootnode
-IMGNAME="ethereum/client-go:alltools-v1.7.3"
+IMGNAME="ethereum/client-go:alltools-v1.8.2"
 DATA_ROOT=${DATA_ROOT:-$(pwd)}
 # generate bootnode key if needed
 mkdir -p $DATA_ROOT/.bootnode
